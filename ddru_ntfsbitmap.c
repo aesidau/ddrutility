@@ -25,8 +25,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 char *title = "ddru_ntfsbitmap";
-char *version_number = "1.5 20150111";
-int copyright_year = 2015;
+char *version_number = "1.6 20260625";
+int copyright_year = 2026;
 
 // Function to handle ctrl-c
 void signal_callback_handler(int signum)

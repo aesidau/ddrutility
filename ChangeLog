@@ -1,3 +1,7 @@
+version 2.8.2 released June 25, 2026
+  * Ddru_ntfsbitmap 1.6 released:
+    + Fixed MFT record size misread on unsigned-char platforms
+
 version 2.8.1 released October 13, 2022
   * fix too small char buffer in ddru_ntfsbitmap.c
   * change makefile to make compile successful on newer gcc

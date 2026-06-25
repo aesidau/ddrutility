@@ -28,8 +28,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "ddrutility_help.h"
 
 char *title = "ddrutility";
-char *version_number = "2.8.1 20221013";
-int copyright_year = 2022;
+char *version_number = "2.8.2 20260625";
+int copyright_year = 2026;
 
 void help(void);
 void version(void);
