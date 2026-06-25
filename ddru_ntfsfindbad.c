@@ -74,7 +74,7 @@ unsigned long *master_parent_buf;
 unsigned long *master_attrib_buf;
 char *master_file_name_buf;
 char **master_file_name_pt;
-char clusters_per_record;
+signed char clusters_per_record;
 unsigned long sectors_per_record;
 unsigned long master_list_count;
 unsigned long long cluster_size;
@@ -589,7 +589,12 @@ int read_boot_sec_file(void)
   }
 
   cluster_size = (boot_sector.items.wBytesPerSec * boot_sector.items.uchSecPerClust);
-  clusters_per_record = boot_sector.items.nClustPerMFTRecord;
+  /* The NTFS field is a single signed byte (clusters per MFT record, or, when
+     negative, log2 of the record size in bytes); the on-disk layout pads it with
+     3 reserved bytes that the struct reads as part of a 4-byte LONG. Mask to the
+     low byte and treat it as signed so the result does not depend on whether the
+     platform's plain char is signed (x86) or unsigned (ARM). */
+  clusters_per_record = (signed char)(boot_sector.items.nClustPerMFTRecord & 0xFF);
 
   if (clusters_per_record > 0)
     mft_record_size = clusters_per_record * cluster_size;
