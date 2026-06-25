@@ -785,9 +785,9 @@ int readsector(void)
       scsi_cmd[13] = (1<<7) + (1<<6) + (1<<5) + (unsigned char)((sector_start >> 24) & 0xf);; // back-compat, set LBA bit, back-compat, high 4 bits of LBA
       if ((sector_start + (sector_count-1) > 0xFFFFFFF) || (sector_count-1 > 0xFF))
         scsi_cmd[14] = 0x24; // read sectors PIO ext
-        else
-          scsi_cmd[14] = 0x20; // read sectors PIO
-          scsi_cmd[15] = 0;
+      else
+        scsi_cmd[14] = 0x20; // read sectors PIO
+      scsi_cmd[15] = 0;
     }
 
     // otherwise do scsi commands
