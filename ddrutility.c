@@ -28,8 +28,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "ddrutility_help.h"
 
 char *title = "ddrutility";
-char *version_number = "2.8.2 20260625";
-int copyright_year = 2026;
+char *version_number = "2.8.3 20260627";
+int copyright_year = 2022;
+int update_year = 2026;
 
 void help(void);
 void version(void);
@@ -109,6 +110,7 @@ void version(void)
 {
   printf ("%s %s\n", title, version_number);
   printf ("Copyright (C) %d Scott Dwyer.\n", copyright_year);
+  printf ("Copyright (C) %d Andrew E Scott.\n", update_year);
   printf ("License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n");
   printf ("This is free software: you are free to change and redistribute it.\n");
   printf ("There is NO WARRANTY, to the extent permitted by law.\n");

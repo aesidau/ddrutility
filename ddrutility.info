@@ -1,7 +1,7 @@
-This is ddrutility.info, produced by makeinfo version 5.2 from
+This is ddrutility.info, produced by makeinfo version 7.3 from
 ddrutility.texinfo.
 
-This manual is for ddrutility (version 2.8, 23 December 2016).
+This manual is for ddrutility (version 2.8.3, 27 June 2026).
 
    Copyright (C) 2012, 2013, 2014, 2015, 2016 Scott Dwyer.
 
@@ -18,7 +18,7 @@ File: ddrutility.info,  Node: Top,  Next: Introduction,  Up: (dir)
 ddrutility
 **********
 
-This manual is for ddrutility (version 2.8, 23 December 2016).
+This manual is for ddrutility (version 2.8.3, 27 June 2026).
 
    This documentation was created and is maintained as a texinfo file,
 and translated to markdown for use on the ddrutiltiy Sourceforge Wiki
@@ -967,6 +967,21 @@ LOGFILE
      If you do not supply the correct offset, you will get an error
      stating the boot sector ID is not NTFS, and the program will exit.
 
+'-u'
+'--untried'
+     Treat non-tried (uncopied) regions as bad.  By default
+     ddru_ntfsfindbad assumes it is working with a fully recovered
+     image, so the only regions it considers bad are the ones ddrescue
+     marked as failed (the "-", "/", and "*" status types in the
+     logfile).  Non-tried ("?")  regions are normally ignored.  If the
+     rescue was interrupted before completion (for example the drive
+     failed partway through the copy), some files may sit in regions
+     that were never tried, and those would not be flagged.  Use this
+     option in that case so that non-tried regions are also counted as
+     errors, ensuring those files are reported as bad.  Note that this
+     only affects matching of file data; it does not change how
+     non-tried regions within the MFT itself are handled.
+
 EXAMPLES:
 
 PARTITION ONLY TO IMAGE RESCUE - If your ddrescue command was:
@@ -1205,17 +1220,21 @@ Index
 * important notes:                       Important Notes.       (line 6)
 * introduction:                          Introduction.          (line 6)
 
-
 
 Tag Table:
-Node: Top449
-Node: Introduction1069
-Node: ddru_findbad3447
-Node: ddru_ntfsbitmap13694
-Node: ddru_ntfsfindbad32152
-Node: ddru_diskutility46743
-Node: Important Notes52511
-Node: Reporting Bugs53904
-Node: Index54694
+Node: Top447
+Node: Introduction1065
+Node: ddru_findbad3443
+Node: ddru_ntfsbitmap13690
+Node: ddru_ntfsfindbad32148
+Node: ddru_diskutility47563
+Node: Important Notes53331
+Node: Reporting Bugs54724
+Node: Index55514
 
 End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

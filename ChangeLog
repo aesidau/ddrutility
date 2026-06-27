@@ -1,3 +1,7 @@
+version 2.8.3 released June 27, 2026
+  * Ddru_ntfsfindbad 1.6 released:
+    + Added --untried option to treat non-tried (uncopied) regions as bad
+
 version 2.8.2 released June 25, 2026
   * Ddru_ntfsbitmap 1.6 released:
     + Fixed MFT record size misread on unsigned-char platforms

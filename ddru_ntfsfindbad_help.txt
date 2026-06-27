@@ -12,6 +12,7 @@ OPTIONS:
  -e, --encoding <encoding>     Set output of NTFS filename language encoding
  -i, --inputoffset <bytes>     Set input offset (partition offset)
  -n, --noconvert               Turn off iconv file name conversion
+ -u, --untried                 Treat non-tried (uncopied) regions as bad
 
 Report bugs to maximus57@hotmail.com
 Or better yet, report bugs at the project home page

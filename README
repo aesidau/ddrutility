@@ -32,6 +32,16 @@ The "make install" command needs to be run as root, which is why "sudo" is inclu
 
 
 NEWS:
+Changes in version 2.8.3
+Ddru_ntfsfindbad - Added the --untried option. By default ddru_ntfsfindbad assumes a fully recovered image and only treats ddrescue's failed regions as bad. The new option also treats non-tried (uncopied) regions as bad, so files that were never copied (for example because the drive failed partway through the rescue) are reported as bad.
+
+
+
+Changes in version 2.8.2
+Ddru_ntfsbitmap - Fixed MFT record size misread on unsigned-char platforms.
+
+
+
 Changes in version 2.8.1
 No longer uses automake to compile, now uses a regular make file. No program files were updated or changed.
 

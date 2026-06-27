@@ -25,8 +25,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 char *title = "ddru_ntfsfindbad";
-char *version_number = "1.5 20150109";
+char *version_number = "1.6 20260627";
 int copyright_year = 2015;
+int update_year = 2026;
 
 // Function to handle ctrl-c
 void signal_callback_handler(int signum)
@@ -62,6 +63,7 @@ long last_second = 0;
 long last_usecond = 0;
 int verbose = 0;
 int debug = 0;
+int include_untried = 0;
 void help(void);
 void version(void);
 char *source_log_file;
@@ -161,12 +163,13 @@ int main (int argc, char **argv)
       {"encoding",    	required_argument, 0, 'e'},
       {"inputoffset",    	required_argument, 0, 'i'},
       {"noconvert",  	no_argument,	0, 'n'},
+      {"untried",  	no_argument,	0, 'u'},
       {0, 0, 0, 0}
     };
     // getopt_long stores the option index here.
     int option_index = 0;
 
-    command_line_argument = getopt_long (argc, argv, "hvDVe:i:n",
+    command_line_argument = getopt_long (argc, argv, "hvDVe:i:nu",
 					 long_options, &option_index);
 
     // Detect the end of the options.
@@ -201,6 +204,10 @@ int main (int argc, char **argv)
 
       case 'n':
 	no_convert = true;
+	break;
+
+      case 'u':
+	include_untried = 1;
 	break;
 
       case '?':
@@ -264,6 +271,9 @@ int main (int argc, char **argv)
 
 
   fprintf (stdout, "%s %s\n", title, version_number);
+
+  if (include_untried && verbose > 0)
+    fprintf (stdout, "Treating non-tried (uncopied) regions as bad\n");
 
   // read the logfile into memory
   return_value = read_file(source_log_file);
@@ -816,7 +826,8 @@ int find_errors(void)
 	    // check if this data run matches with any error sections of the rescue log
 	    for (x = 0; x < total_lines; x++)
 	    {
-	      if (type[x] == '-' || type[x] == '/' || type[x] == '*')
+	      if (type[x] == '-' || type[x] == '/' || type[x] == '*'
+		  || (include_untried && type[x] == '?'))
 	      {
 		if (position[x] >= inode_part_offset[d][c] && position[x] < (inode_part_offset[d][c] + inode_part_size[d][c]))
 		{
@@ -1708,6 +1719,7 @@ void version(void)
 {
   printf ("%s %s\n", title, version_number);
   printf ("Copyright (C) %d Scott Dwyer.\n", copyright_year);
+  printf ("Copyright (C) %d Andrew E Scott.\n", update_year);
   printf ("License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n");
   printf ("This is free software: you are free to change and redistribute it.\n");
   printf ("There is NO WARRANTY, to the extent permitted by law.\n");

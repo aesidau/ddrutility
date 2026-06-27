@@ -1,13 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<!-- This manual is for ddrutility (version 2.8.1, 13 October 2022).
+<!-- Created by GNU Texinfo 7.3, https://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- This manual is for ddrutility (version 2.8.3, 27 June 2026).
 
 Copyright (C) 2012, 2013, 2014, 2015, 2016 Scott Dwyer.
 
 This manual is free documentation: you have unlimited permission
 to copy, distribute and modify it. -->
-<!-- Created by GNU Texinfo 5.2, http://www.gnu.org/software/texinfo/ -->
-<head>
 <title>Ddrutility Manual</title>
 
 <meta name="description" content="Ddrutility Manual">
@@ -15,107 +16,74 @@ to copy, distribute and modify it. -->
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="makeinfo">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <link href="#Top" rel="start" title="Top">
 <link href="#Index" rel="index" title="Index">
-<link href="dir.html#Top" rel="up" title="(dir)">
+<link href="#Introduction" rel="next" title="Introduction">
 <style type="text/css">
-<!--
-a.summary-letter {text-decoration: none}
-blockquote.smallquotation {font-size: smaller}
-div.display {margin-left: 3.2em}
+a.copiable-link {visibility: hidden; text-decoration: none; line-height: 0em}
+a.summary-letter-printindex {text-decoration: none}
 div.example {margin-left: 3.2em}
-div.indentedblock {margin-left: 3.2em}
-div.lisp {margin-left: 3.2em}
-div.smalldisplay {margin-left: 3.2em}
-div.smallexample {margin-left: 3.2em}
-div.smallindentedblock {margin-left: 3.2em; font-size: smaller}
-div.smalllisp {margin-left: 3.2em}
-kbd {font-style:oblique}
-pre.display {font-family: inherit}
-pre.format {font-family: inherit}
-pre.menu-comment {font-family: serif}
-pre.menu-preformatted {font-family: serif}
-pre.smalldisplay {font-family: inherit; font-size: smaller}
-pre.smallexample {font-size: smaller}
-pre.smallformat {font-family: inherit; font-size: smaller}
-pre.smalllisp {font-size: smaller}
-span.nocodebreak {white-space:nowrap}
-span.nolinebreak {white-space:nowrap}
-span.roman {font-family:serif; font-weight:normal}
-span.sansserif {font-family:sans-serif; font-weight:normal}
-ul.no-bullet {list-style: none}
--->
+span:hover a.copiable-link {visibility: visible}
+td.printindex-index-entry {vertical-align: top; padding-left: 1.5em}
+td.printindex-index-section {vertical-align: top; padding-left: 1em}
+th.index-letter-header-printindex {text-align: left}
 </style>
 
 
 </head>
 
-<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
-<h1 class="settitle" align="center">Ddrutility Manual</h1>
+<body>
 
 
 
 
 
-<a name="Top"></a>
-<div class="header">
-<p>
-Next: <a href="#Introduction" accesskey="n" rel="next">Introduction</a>, Up: <a href="dir.html#Top" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
-</div>
-<a name="ddrutility"></a>
-<h1 class="top">ddrutility</h1>
+<div class="top-level-extent" id="Top">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Introduction" rel="next">Introduction</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h1 class="top" id="ddrutility"><span>ddrutility<a class="copiable-link" href="#ddrutility"> &para;</a></span></h1>
 
-<p>This manual is for ddrutility (version 2.8.1, 13 October 2022).
+<p>This manual is for ddrutility (version 2.8.3, 27 June 2026).
 </p>
 <p>This documentation was created and is maintained as a texinfo file, and
 translated to markdown for use on the ddrutiltiy Sourceforge Wiki page. The
 navigation does not work on the Wiki page. You can download help.html from the
 files section and open it with a web browser and the navigation will work.
 </p>
-<table class="menu" border="0" cellspacing="0">
-<tr><td align="left" valign="top">&bull; <a href="#Introduction" accesskey="1">Introduction</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#ddru_005ffindbad" accesskey="2">ddru_findbad</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#ddru_005fntfsbitmap" accesskey="3">ddru_ntfsbitmap</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#ddru_005fntfsfindbad" accesskey="4">ddru_ntfsfindbad</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#ddru_005fdiskutility" accesskey="5">ddru_diskutility</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Important-Notes" accesskey="6">Important Notes</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Reporting-Bugs" accesskey="7">Reporting Bugs</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-<tr><td align="left" valign="top">&bull; <a href="#Index" accesskey="8">Index</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
-</td></tr>
-</table>
 
+<ul class="mini-toc">
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#ddru_005ffindbad">ddru_findbad</a></li>
+<li><a href="#ddru_005fntfsbitmap">ddru_ntfsbitmap</a></li>
+<li><a href="#ddru_005fntfsfindbad">ddru_ntfsfindbad</a></li>
+<li><a href="#ddru_005fdiskutility">ddru_diskutility</a></li>
+<li><a href="#Important-Notes">Important Notes</a></li>
+<li><a href="#Reporting-Bugs">Reporting Bugs</a></li>
+<li><a href="#Index">Index</a></li>
+</ul>
 <hr>
-<a name="Introduction"></a>
-<div class="header">
-<p>
-Next: <a href="#ddru_005ffindbad" accesskey="n" rel="next">ddru_findbad</a>, Previous: <a href="#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
-</div>
-<a name="Introduction-1"></a>
-<h2 class="chapter">1 Introduction</h2>
-<a name="index-introduction"></a>
+<div class="chapter-level-extent" id="Introduction">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#ddru_005ffindbad" rel="next">ddru_findbad</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Top" rel="prev">ddrutility</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="Introduction-1"><span>1 Introduction<a class="copiable-link" href="#Introduction-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-introduction"></a>
 
 <p>Ddrutility is a linux based set of utilities designed to assist with data
 recovery, specifically as a supplement to GNU ddrescue. Each utility has its own
 version number followed by the date last updated. Note that most if not all of
 these utilities need to be ran as root. It contains the following programs:
 </p>
-<p><code>ddru_findbad</code>
+<p><code class="command">ddru_findbad</code>
 </p>
-<p><code>ddru_ntfsbitmap</code>
+<p><code class="command">ddru_ntfsbitmap</code>
 </p>
-<p><code>ddru_ntfsfindbad</code>
+<p><code class="command">ddru_ntfsfindbad</code>
 </p>
-<p><code>ddru_diskutility</code>
+<p><code class="command">ddru_diskutility</code>
 </p>
-<p><code>ddru_findbad</code> is actually the original ddrutility version 1.6. None of
+<p><code class="command">ddru_findbad</code> is actually the original ddrutility version 1.6. None of
 its functionality has changed; only the name and documentation have been
 changed, and some bug fixes and improvements have been done. It is a bash script
 that will try to find which files are related to bad sectors in a ddrescue log
@@ -127,35 +95,33 @@ updates or improvements of its functionality. It is possible (hopeful) that I
 may create new utilities to replace it (or parts of it) in the future. These
 utilities would not rely on 3rd party functions, and would be faster.
 </p>
-<p><code>ddru_ntfsbitmap</code> is a utility to extract the bitmap file from a NTFS
+<p><code class="command">ddru_ntfsbitmap</code> is a utility to extract the bitmap file from a NTFS
 partition, and then process it and create a domain file to be used with
 ddrescue. This would allow for only recovering the used portion of the
 partition, and not spending time reading unused and unneeded data.
 </p>
-<p><code>ddru_ntfsfindbad</code> is a utility for NTFS partitions to find which files
+<p><code class="command">ddru_ntfsfindbad</code> is a utility for NTFS partitions to find which files
 are related to bad sectors in a ddrescue log file. You should use this for NTFS
 partitions in place of the original ddru_findbad, as it is MUCH faster than the
 original ddru_findbad, gives more useful output, and does NOT require any 3rd
 party utilities. It will also do the best it can to work with a damaged file
 system (and even give you an idea of how damaged).
 </p>
-<p><code>ddru_diskutility</code> is an advanced LINUX ONLY utility that can perform
+<p><code class="command">ddru_diskutility</code> is an advanced LINUX ONLY utility that can perform
 several different functions on a disk, using some direct pass-through disk
 commands. Current functions include device inquiry, sector reads, and read long
 commands. It is meant for advanced users.
 </p>
 <hr>
-<a name="ddru_005ffindbad"></a>
-<div class="header">
-<p>
-Next: <a href="#ddru_005fntfsbitmap" accesskey="n" rel="next">ddru_ntfsbitmap</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="ddru_005ffindbad-1"></a>
-<h2 class="chapter">2 ddru_findbad</h2>
-<a name="index-ddru_005ffindbad"></a>
-<a name="index-ddru_005ffindbad-1"></a>
+<div class="chapter-level-extent" id="ddru_005ffindbad">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#ddru_005fntfsbitmap" rel="next">ddru_ntfsbitmap</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Introduction" rel="prev">Introduction</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="ddru_005ffindbad-1"><span>2 ddru_findbad<a class="copiable-link" href="#ddru_005ffindbad-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-ddru_005ffindbad"></a>
+<a class="index-entry-id" id="index-ddru_005ffindbad-1"></a>
 
-<p><code>ddru_findbad</code> is meant to be a compliment to gnuddrescue. It finds
+<p><code class="command">ddru_findbad</code> is meant to be a compliment to gnuddrescue. It finds
 which files are related to the bad sectors. It will also work with a home made
 file of a bad sector list (see LOGFILE below). Note that ddru_findbad may not
 work on a mounted drive or image.
@@ -171,7 +137,7 @@ Note that any repair tool ran on the target could possibly cause ddru_findbad to
 have inaccurate results. It is recommended that you always make an extra copy of
 the recovered copy and work with that copy.
 </p>
-<p><code>ddru_findbad</code> is not meant to be run on the drive that actually has the
+<p><code class="command">ddru_findbad</code> is not meant to be run on the drive that actually has the
 bad sectors. It is meant to be ran against a recovered copy of the drive. FAT
 and HFS+ will fail if ran against the actual drive, as ifind seems to feel the
 need to actually read the sectors in question. NTFS and EXT seem to be processed
@@ -179,21 +145,21 @@ without trying to read the sectors in question, however understand that they
 still will be trying to read the file table (which could have bad sectors) to
 get results.
 </p>
-<p><code>ddru_findbad</code> must be run as root (sudo).
+<p><code class="command">ddru_findbad</code> must be run as root (sudo).
 </p>
-<p><code>ddru_findbad</code> works on NTFS, EXT2/3/4, FAT16/32, and HFS+ file systems
+<p><code class="command">ddru_findbad</code> works on NTFS, EXT2/3/4, FAT16/32, and HFS+ file systems
 (note that EXT4 will report as EXT3).
 </p>
-<p><code>ddru_findbad</code> requires sleuthkit to be installed for normal operation.
+<p><code class="command">ddru_findbad</code> requires sleuthkit to be installed for normal operation.
 Sleuthkit is not included as standard in current Ubuntu versions. (sudo apt-get
 install sleuthkit)
 </p>
-<p><code>ddru_findbad</code> requires ntfs-3g to be installed for NTFS support. If it
+<p><code class="command">ddru_findbad</code> requires ntfs-3g to be installed for NTFS support. If it
 is not available then NTFS partitions will not be able to be processed, and
 errors may be produced if trying to do so. Ntfs-3g seems to be included in
 current Ubuntu versions. (sudo apt-get install ntfs-3g)
 </p>
-<p><code>ddru_findbad</code> requires GNU fdisk to be installed to be able to process
+<p><code class="command">ddru_findbad</code> requires GNU fdisk to be installed to be able to process
 GPT partitioned disks. If GNU fdisk is not available, then it will use fdisk,
 but it will not be able to process GPT partitions and may produce errors if
 trying to do so. GNU fdisk is not included as standard in current Ubuntu
@@ -202,7 +168,7 @@ versions. (sudo apt-get install gnu-fdisk)
 <p>Ubuntu Rescue Remix contains the above requirements, so it should run on the
 live cd.
 </p>
-<p><code>ddru_findbad</code> will work on a whole drive recovery, or a single
+<p><code class="command">ddru_findbad</code> will work on a whole drive recovery, or a single
 partition recovery. It will work with a target device or image file.
 </p>
 <p>Results are left in 4 main output files. Results_summary is a condensed sorted
@@ -215,12 +181,12 @@ Results_debug is mostly for troubleshooting purposes and most error messages are
 sent to it. If you request help for any problems with ddru_findbad I may ask for
 these 4 files.
 </p>
-<p><code>ddru_findbad</code> makes several temporary files in the directory that it is
+<p><code class="command">ddru_findbad</code> makes several temporary files in the directory that it is
 run from. It deletes them when finished. Do not mount the target and run
 ddru_findbad from within the target, as that would cause writing to the target
 and you probably don&rsquo;t want that!
 </p>
-<p><code>ddru_findbad</code> does not knowingly write or alter any data on the target
+<p><code class="command">ddru_findbad</code> does not knowingly write or alter any data on the target
 drive and does not require the file system of the target to be mounted. However,
 it makes calls to different 3rd party tools which SHOULDN&rsquo;T do any writing for
 what they are, but this has not been verified.
@@ -235,12 +201,12 @@ I should work on.
 <p>The format for running ddru_findbad is:
 </p>
 <div class="example">
-<pre class="example">ddru_findbad <var>target</var> <var>logfile</var> [<var>options</var>]
+<pre class="example-preformatted">ddru_findbad <var class="var">target</var> <var class="var">logfile</var> [<var class="var">options</var>]
 </pre></div>
 
 <p>Where:
-</p><dl compact="compact">
-<dt><var>target</var></dt>
+</p><dl class="table">
+<dt><var class="var">target</var></dt>
 <dd><p>The drive or partition if using a device (/dev/hda), or the name (and full path
 if not in the current directory) of the image file (/media/mydrive/image.dd).
 The target should be a copy or image of the original drive with bad sectors. It
@@ -249,7 +215,7 @@ it on the actual drive for some reason, note that FAT and HFS+ will not process
 with actual bad sectors.
 </p>
 </dd>
-<dt><var>logfile</var></dt>
+<dt><var class="var">logfile</var></dt>
 <dd><p>The logfile from ddrescue. It can alternatively be a file containing a list of
 the bad sectors, one sector number per line with no other text in the file. The
 sector file can also contain bad sector ranges, with two sector numbers per line
@@ -262,40 +228,40 @@ which depends on what the target is.
 
 <p>ddru_findbad supports the following options:
 </p>
-<dl compact="compact">
-<dt>&lsquo;<samp>-h</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--help</samp>&rsquo;</dt>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">-h</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--help</samp>&rsquo;</dt>
 <dd><p>Print an informative help message describing the options and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-v</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--version</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-v</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--version</samp>&rsquo;</dt>
 <dd><p>Print the version number and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-o <var>file</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--output <var>file</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-o <var class="var">file</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--output <var class="var">file</var></samp>&rsquo;</dt>
 <dd><p>The base name that will be at the beginning of the multiple results files. The
 default is &quot;results&quot;. The different output files will have extensions added to
 them, for example results_summary, results_list, etc...
 </p>
 </dd>
-<dt>&lsquo;<samp>-w <var>seconds</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--loopwait <var>seconds</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-w <var class="var">seconds</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--loopwait <var class="var">seconds</var></samp>&rsquo;</dt>
 <dd><p>The number of seconds to wait before doing loop commands. You shouldn&rsquo;t have to
 change this. It is only used with image files. The default is 2. Increase this
 if you get loop errors such as device busy.
 </p>
 </dd>
-<dt>&lsquo;<samp>-s <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--sectorsize <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-s <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--sectorsize <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>The sector size in bytes of the target drive or image. The default is 512. Note
 that only a sector size of 512 has been tested, as I don&rsquo;t have any drives of a
 different sector size to test.
 </p>
 </dd>
-<dt>&lsquo;<samp>-a</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--autooff</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-a</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--autooff</samp>&rsquo;</dt>
 <dd><p>Turns off automatic finding of partition types, and allows the user to manually
 select what type the partition is for every partition. It also gives the option
 to skip partitions. This could be useful if for some reason the program is
@@ -306,8 +272,8 @@ choose to process a partition and there are more after it, you will be prompted
 again after the current partition is done processing.
 </p>
 </dd>
-<dt>&lsquo;<samp>-m</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--moreinfo</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-m</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--moreinfo</samp>&rsquo;</dt>
 <dd><p>Will add what could be considered an insane amount of (mostly) useless data from
 fsstat and fls to the results_info file. Note that at this time fls does not
 work right on EXT4 (sleuthkit currently only supports ext2/3). If the file
@@ -316,8 +282,8 @@ could add a considerable (or insane) amount of processing time. Only for
 advanced users, use this if you understand what output fsstat and fls give.
 </p>
 </dd>
-<dt>&lsquo;<samp>-e</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--extraoutput</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-e</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--extraoutput</samp>&rsquo;</dt>
 <dd><p>Will produce more types of output files. The processing for this is not very
 efficient at this time (it is actually horrible). If there are a lot of bad
 sectors, this could take a considerable (or insane) amount of processing time.
@@ -326,8 +292,8 @@ faster. Currently available with the EXTRAOUT option: Results_bysector lists the
 bad sector groups with the files in each group.
 </p>
 </dd>
-<dt>&lsquo;<samp>-q</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--quick</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-q</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--quick</samp>&rsquo;</dt>
 <dd><p>Only processes the first and last sector of each group. This allows for a much
 faster first run so you can get an idea of what files are involved. May provide
 more useful output with the EXTRAOUT option to get the results_bysector output.
@@ -338,8 +304,8 @@ of the bad sectors are in very small groups or individual sectors then this is
 not efficient and will take nearly as long as a normal run.
 </p>
 </dd>
-<dt>&lsquo;<samp>-Q</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--quickntfs</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-Q</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--quickntfs</samp>&rsquo;</dt>
 <dd><p>The same as quick, except it processes NTFS partitions extra special. It uses
 the ability of ntfscluster to rapidly check groups of sectors at once. This can
 very quickly produce a FULL list of files related to bad sectors for NTFS
@@ -356,22 +322,22 @@ results_summary (and in results_bysector if the extra option is used).
 </p>
 <p>If your ddrescue command was:
 </p><div class="example">
-<pre class="example">ddrescue /dev/sda1 rescued_image rescued_logfile
+<pre class="example-preformatted">ddrescue /dev/sda1 rescued_image rescued_logfile
 </pre></div>
 
 <p>Then the ddru_findbad command would be:
 </p><div class="example">
-<pre class="example">ddru_findbad rescued_image rescued_logfile
+<pre class="example-preformatted">ddru_findbad rescued_image rescued_logfile
 </pre></div>
 
 <p>If your ddrescue command was:
 </p><div class="example">
-<pre class="example">ddrescue /dev/sda /dev/sdb rescued_logfile
+<pre class="example-preformatted">ddrescue /dev/sda /dev/sdb rescued_logfile
 </pre></div>
 
 <p>Then the ddru_findbad command would be:
 </p><div class="example">
-<pre class="example">ddru_findbad /dev/sdb rescued_logfile
+<pre class="example-preformatted">ddru_findbad /dev/sdb rescued_logfile
 </pre></div>
 
 <p>NOTE: It is important that the source for ddru_findbad is the same as the
@@ -385,15 +351,13 @@ as it matches the format used to describe the ddrescue outfile.
 
 
 <hr>
-<a name="ddru_005fntfsbitmap"></a>
-<div class="header">
-<p>
-Next: <a href="#ddru_005fntfsfindbad" accesskey="n" rel="next">ddru_ntfsfindbad</a>, Previous: <a href="#ddru_005ffindbad" accesskey="p" rel="prev">ddru_findbad</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="ddru_005fntfsbitmap-1"></a>
-<h2 class="chapter">3 ddru_ntfsbitmap</h2>
-<a name="index-ddru_005fntfsbitmap"></a>
-<a name="index-ddru_005fntfsbitmap-1"></a>
+<div class="chapter-level-extent" id="ddru_005fntfsbitmap">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#ddru_005fntfsfindbad" rel="next">ddru_ntfsfindbad</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#ddru_005ffindbad" rel="prev">ddru_findbad</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="ddru_005fntfsbitmap-1"><span>3 ddru_ntfsbitmap<a class="copiable-link" href="#ddru_005fntfsbitmap-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-ddru_005fntfsbitmap"></a>
+<a class="index-entry-id" id="index-ddru_005fntfsbitmap-1"></a>
 
 <p>Ddru_ntfsbitmap is a utility that will extract the bitmap file from an NTFS
 partition, and then create a rescue domain file to use with ddrescue. This will
@@ -434,7 +398,7 @@ after processing the bitmap file, so you can get an idea of how much time and
 effort you may be saving. You can also get this number again later on by running
 ddrecuelog against the domain_logfile.
 </p><div class="example">
-<pre class="example">ddrescuelog -t domain_logfile
+<pre class="example-preformatted">ddrescuelog -t domain_logfile
 </pre></div>
 <p>In the results, &quot;rescued&quot; will = used space that you are trying to recover, and
 &quot;non-tried&quot; will = free space that you are ignoring. When your rescue percentage
@@ -473,37 +437,37 @@ of a different partition or a different disk. Also, if you do a command with the
 wrong options that causes some error, you may want to also delete these files
 and start over. The output files are as follows:
 </p>
-<dl compact="compact">
-<dt><var>__bootsec</var></dt>
+<dl class="table">
+<dt><var class="var">__bootsec</var></dt>
 <dd><p>This is the recovered partition boot sector (512 bytes). It is needed to find
 the location of the MFT, along with the sector and cluster size.
 </p>
 </dd>
-<dt><var>__bootsec.log</var></dt>
+<dt><var class="var">__bootsec.log</var></dt>
 <dd><p>This is the ddrescue logfile for the __bootsec file.
 </p>
 </dd>
-<dt><var>__mftshort</var></dt>
+<dt><var class="var">__mftshort</var></dt>
 <dd><p>This is the first 16 entries of the MFT (16KB). It is needed to find where the
 bitmap file is located on the disk.
 </p>
 </dd>
-<dt><var>__mftshort.log</var></dt>
+<dt><var class="var">__mftshort.log</var></dt>
 <dd><p>This is the ddrescue logfile for the __mftshort file.
 </p>
 </dd>
-<dt><var>__bitmapfile</var></dt>
+<dt><var class="var">__bitmapfile</var></dt>
 <dd><p>This is the recovered NTFS bitmap file.
 </p>
 </dd>
-<dt><var>_partX__bitmapfile.log</var></dt>
+<dt><var class="var">_partX__bitmapfile.log</var></dt>
 <dd><p>This is the ddrescue logfile for the NTFS bitmap file. There could be multiple
 logfiles, each with its own part# (part0, part1...). Normally there should only
 be one logfile, but if for some reason the NTFS bitmap file is fragmented on the
 disk, there will be a separate logfile for every fragment.
 </p>
 </dd>
-<dt><var>ntfsbitmap_rescue_report.log</var></dt>
+<dt><var class="var">ntfsbitmap_rescue_report.log</var></dt>
 <dd><p>This file contains all the results from ddrescuelog &ndash;show-status for all the
 ddrescue reads used by ddru_ntfsbitmap, and also for the domain logfile(s).
 </p>
@@ -513,18 +477,18 @@ ddrescue reads used by ddru_ntfsbitmap, and also for the domain logfile(s).
 <p>The format for running ddru_ntfsbitmap is:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap <var>source_disk</var> <var>logfile</var> [<var>options</var>]
+<pre class="example-preformatted">ddru_ntfsbitmap <var class="var">source_disk</var> <var class="var">logfile</var> [<var class="var">options</var>]
 </pre></div>
 
 <p>Where:
-</p><dl compact="compact">
-<dt><var>source_disk</var></dt>
+</p><dl class="table">
+<dt><var class="var">source_disk</var></dt>
 <dd><p>The drive or partition that you are trying to recover. This needs to be the
 EXACT same source as the ddrescue input file that you will be using for the
 recovery.
 </p>
 </dd>
-<dt><var>logfile</var></dt>
+<dt><var class="var">logfile</var></dt>
 <dd><p>The name of the domain logfile that you wish to create to use with ddrescue.
 </p>
 </dd>
@@ -532,34 +496,34 @@ recovery.
 
 <p>ddru_ntfsbitmap supports the following options:
 </p>
-<dl compact="compact">
-<dt>&lsquo;<samp>-h</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--help</samp>&rsquo;</dt>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">-h</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--help</samp>&rsquo;</dt>
 <dd><p>Print an informative help message describing the options and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-v</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--version</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-v</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--version</samp>&rsquo;</dt>
 <dd><p>Print the version number and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-D</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--debug</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-D</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--debug</samp>&rsquo;</dt>
 <dd><p>Turn on debugging and create a debug file. The name of this file is
-<code>ntfsbitmap_debug.log</code>. It is mostly for my use in troubleshooting bugs. I
+<code class="code">ntfsbitmap_debug.log</code>. It is mostly for my use in troubleshooting bugs. I
 may ask for this file if someone reports a problem that I am unable to identify
 from their description.
 </p>
 </dd>
-<dt>&lsquo;<samp>-V</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--verbose</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-V</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
 <dd><p>Show additional information. Right now all this shows is the commands sent to
 ddrescue. This could help if you are trying to pass options to ddrescue and it
 is not working correctly.
 </p>
 </dd>
-<dt>&lsquo;<samp>-g <var>clusters</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--mingap <var>clusters</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-g <var class="var">clusters</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--mingap <var class="var">clusters</var></samp>&rsquo;</dt>
 <dd><p>The minimum number of unused NTFS clusters between the used clusters. The
 default is 0 (allow all gaps), and the maximum allowed value is 4096. Any number
 higher than the maximum will be lowered to the maximum. The purpose of this
@@ -581,7 +545,7 @@ perform any additional reads (unless you specify retries in the ddrescue
 options). For instance:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda1 domain_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda1 domain_logfile
 ddru_ntfsbitmap /dev/sda1 -g 16 domain_logfile16
 ddru_ntfsbitmap /dev/sda1 -g 256 domain_logfile256
 ddru_ntfsbitmap /dev/sda1 -g 4096 domain_logfile4096
@@ -597,8 +561,8 @@ this option is not yet proven, and using a number too high will have the
 opposite effect.
 </p>
 </dd>
-<dt>&lsquo;<samp>-i <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--inputoffset <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-i <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--inputoffset <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>Set input offset (partition offset). This is needed if doing a whole drive
 recovery, to specify the offset of the NTFS partition. You need to specify this
 offset if you will be using an input such as &quot;/dev/sda&quot;. You can get this offset
@@ -608,7 +572,7 @@ from &quot;fdisk -lu /dev/sda&quot;, where /dev/sda is the source disk you wish 
 recover.
 </p>
 <div class="example">
-<pre class="example">Disk /dev/sda: 5 GB, 5362882560 bytes
+<pre class="example-preformatted">Disk /dev/sda: 5 GB, 5362882560 bytes
 255 heads, 63 sectors/track, 652 cylinders, total 10474380 sectors
 Units = sectors of 1 * 512 = 512 bytes
 
@@ -624,7 +588,7 @@ which is what you supply to this option. So your ddru_ntfsbitmap command would
 look something like this:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda -i 1048576 domain_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda -i 1048576 domain_logfile
 </pre></div>
 
 <p>If you do not supply the correct offset, you will get an error stating the boot
@@ -633,23 +597,23 @@ corresponding logfile will also be deleted (files will not be deleted if using
 the &ndash;debug option).
 </p>
 </dd>
-<dt>&lsquo;<samp>-o <var>&quot;options&quot;</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--options <var>&quot;options&quot;</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-o <var class="var">&quot;options&quot;</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--options <var class="var">&quot;options&quot;</var></samp>&rsquo;</dt>
 <dd><p>Ddrescue options to pass directly to ddrescue. Use quotes around the whole
 string of options. For example:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda1 domainfile --options &quot;--direct --no-split&quot;
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda1 domainfile --options &quot;--direct --no-split&quot;
 </pre></div>
 
 <p>These options will be passed to all calls to ddrescue. Note that you cannot use
-the options <code>--input-position</code>, <code>--output-position</code>, or <code>--size</code>,
+the options <code class="code">--input-position</code>, <code class="code">--output-position</code>, or <code class="code">--size</code>,
 as these are used by ddru_ntfsbitmap for control. If you try to pass one of
 these options, you will likely get an error message from ddrescue.
 </p>
 </dd>
-<dt>&lsquo;<samp>-m <var>file</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--mftdomain <var>file</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-m <var class="var">file</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--mftdomain <var class="var">file</var></samp>&rsquo;</dt>
 <dd><p>Creates a separate additional domain file for the MFT (master file table). This
 mft_domain_file can be used the same way as the examples below, just insert
 mft_domain_file in place of the regular domain_logfile. The purpose of the
@@ -663,17 +627,17 @@ many, which could help with your decision on how to proceed.
 <p>To create both a regular domain and also a MFT domain file:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda1 domain_logfile -m mft_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda1 domain_logfile -m mft_logfile
 </pre></div>
 
 <p>Then to focus on the MFT your ddrescue command would be:
 </p><div class="example">
-<pre class="example">ddrescue -m mft_logfile /dev/sda1 recovered_ntfs_image rescue_logfile
+<pre class="example-preformatted">ddrescue -m mft_logfile /dev/sda1 recovered_ntfs_image rescue_logfile
 </pre></div>
 
 </dd>
-<dt>&lsquo;<samp>-r</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--restart</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-r</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--restart</samp>&rsquo;</dt>
 <dd><p>Delete all output files and start over. The default is for ddru_ntfsbitmap to
 resume an attempt where one or more of the ddrescue reads had errors and you
 wish to continue trying to get the most data (possibly using different ddrescue
@@ -695,7 +659,7 @@ start over without having to manually delete the previous files.
 <p>Let&rsquo;s start with the following fdisk -lu result:
 </p>
 <div class="example">
-<pre class="example">Disk /dev/sda: 5 GB, 5362882560 bytes
+<pre class="example-preformatted">Disk /dev/sda: 5 GB, 5362882560 bytes
 255 heads, 63 sectors/track, 652 cylinders, total 10474380 sectors
 Units = sectors of 1 * 512 = 512 bytes
 
@@ -707,13 +671,13 @@ Warning: Partition 1 does not end on cylinder boundary.
 <p>The ddru_ntfsbitmap command would be something like:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda1 domain_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda1 domain_logfile
 </pre></div>
 
 <p>Your ddrescue command would be something like:
 </p>
 <div class="example">
-<pre class="example">ddrescue -m domain_logfile /dev/sda1 recovered_ntfs_image rescue_logfile
+<pre class="example-preformatted">ddrescue -m domain_logfile /dev/sda1 recovered_ntfs_image rescue_logfile
 </pre></div>
 
 
@@ -724,7 +688,7 @@ Warning: Partition 1 does not end on cylinder boundary.
 <p>Let&rsquo;s start with the following fdisk -lu result:
 </p>
 <div class="example">
-<pre class="example">Disk /dev/sda: 5 GB, 5362882560 bytes
+<pre class="example-preformatted">Disk /dev/sda: 5 GB, 5362882560 bytes
 255 heads, 63 sectors/track, 652 cylinders, total 10474380 sectors
 Units = sectors of 1 * 512 = 512 bytes
 
@@ -741,16 +705,16 @@ input offset for the NTFS partition.
 <p>Your ddru_ntfsbitmap command would be something like:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda -i 1048576 domain_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda -i 1048576 domain_logfile
 </pre></div>
 
 <p>Your ddrescue command would be something like this respectively:
 </p><div class="example">
-<pre class="example">ddrescue -f -m domain_logfile /dev/sda /dev/sdb rescue_logfile
+<pre class="example-preformatted">ddrescue -f -m domain_logfile /dev/sda /dev/sdb rescue_logfile
 </pre></div>
 <p>Or:
 </p><div class="example">
-<pre class="example">ddrescue -m domain_logfile /dev/sda recovered_disk_image rescue_logfile
+<pre class="example-preformatted">ddrescue -m domain_logfile /dev/sda recovered_disk_image rescue_logfile
 </pre></div>
 
 <p>If there is more than one NTFS partition on the drive, you would just repeat the
@@ -779,7 +743,7 @@ be copied for the OS to boot.
 <p>Let&rsquo;s start with the following fdisk -lu result:
 </p>
 <div class="example">
-<pre class="example">Disk /dev/sda: 120 GB, 120031511040 bytes
+<pre class="example-preformatted">Disk /dev/sda: 120 GB, 120031511040 bytes
 255 heads, 63 sectors/track, 14593 cylinders, total 234436545 sectors
 Units = sectors of 1 * 512 = 512 bytes
 
@@ -797,12 +761,12 @@ by the sector size (20466810 * 512 = 10479006720). So then your ddru_ntfsbitmap
 command would be something like:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap /dev/sda -i 10479006720 domain_logfile
+<pre class="example-preformatted">ddru_ntfsbitmap /dev/sda -i 10479006720 domain_logfile
 </pre></div>
 
 <p>Your ddrescue command would be something like this:
 </p><div class="example">
-<pre class="example">ddrescue -f -m domain_logfile /dev/sda /dev/sdb rescue_logfile
+<pre class="example-preformatted">ddrescue -f -m domain_logfile /dev/sda /dev/sdb rescue_logfile
 </pre></div>
 
 <p>Now you want to also recover the FAT32 and Linux partitions. You need to do some
@@ -814,7 +778,7 @@ ddrescue.
 </p>
 <p>So now your next ddrescue command would be something like this:
 </p><div class="example">
-<pre class="example">ddrescue -f -i 32256 -s 10478973952 /dev/sda /dev/sdb rescue_logfile
+<pre class="example-preformatted">ddrescue -f -i 32256 -s 10478973952 /dev/sda /dev/sdb rescue_logfile
 </pre></div>
 
 <p>And we do the same for the Linux partition. Input position = (143331930 * 512) =
@@ -822,7 +786,7 @@ ddrescue.
 </p>
 <p>Ddrescue command:
 </p><div class="example">
-<pre class="example">ddrescue -f -i 73385948160 -s 41940702208 /dev/sda /dev/sdb rescue_logfile
+<pre class="example-preformatted">ddrescue -f -i 73385948160 -s 41940702208 /dev/sda /dev/sdb rescue_logfile
 </pre></div>
 
 <p>I am not going to get into the Extended partition, except to say that I am
@@ -833,15 +797,13 @@ already.
 
 
 <hr>
-<a name="ddru_005fntfsfindbad"></a>
-<div class="header">
-<p>
-Next: <a href="#ddru_005fdiskutility" accesskey="n" rel="next">ddru_diskutility</a>, Previous: <a href="#ddru_005fntfsbitmap" accesskey="p" rel="prev">ddru_ntfsbitmap</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="ddru_005fntfsfindbad-1"></a>
-<h2 class="chapter">4 ddru_ntfsfindbad</h2>
-<a name="index-ddru_005fntfsfindbad"></a>
-<a name="index-ddru_005fntfsfindbad-1"></a>
+<div class="chapter-level-extent" id="ddru_005fntfsfindbad">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#ddru_005fdiskutility" rel="next">ddru_diskutility</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#ddru_005fntfsbitmap" rel="prev">ddru_ntfsbitmap</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="ddru_005fntfsfindbad-1"><span>4 ddru_ntfsfindbad<a class="copiable-link" href="#ddru_005fntfsfindbad-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-ddru_005fntfsfindbad"></a>
+<a class="index-entry-id" id="index-ddru_005fntfsfindbad-1"></a>
 
 <p>Ddru_ntfsfindbad is a utility for NTFS partitions to find which files are
 related to bad sectors in a ddrescue log file. While it only works for NTFS
@@ -903,8 +865,8 @@ can.
 </p>
 <p>The normal output file is:
 </p>
-<dl compact="compact">
-<dt><var>ntfsfindbad.log</var></dt>
+<dl class="table">
+<dt><var class="var">ntfsfindbad.log</var></dt>
 <dd><p>This is a list of the files/folders that are found to have errors. Inode= the
 NTFS inode number of the file/folder. Errors= how many separate contiguous error
 sections there are. Errorsize= the total size of all the combined errors in
@@ -923,12 +885,12 @@ MFT can cause this.
 <p>The format for running ddru_ntfsfindbad is:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsbitmap <var>source</var> <var>logfile</var> [<var>options</var>]
+<pre class="example-preformatted">ddru_ntfsbitmap <var class="var">source</var> <var class="var">logfile</var> [<var class="var">options</var>]
 </pre></div>
 
 <p>Where:
-</p><dl compact="compact">
-<dt><var>source</var></dt>
+</p><dl class="table">
+<dt><var class="var">source</var></dt>
 <dd><p>The drive, partition, or image file that you have recovered. This needs to be
 the EXACT SAME DESTINATION as the ddrescue output file that you used for the
 recovery. If you copied /dev/sda to /dev/sdb, then use /dev/sdb as the source,
@@ -940,7 +902,7 @@ supplying a drive or an image created from a whole drive, then you must supply
 the correct partition offset (see &ndash;inputoffset for more info).
 </p>
 </dd>
-<dt><var>logfile</var></dt>
+<dt><var class="var">logfile</var></dt>
 <dd><p>The name of the logfile from ddrescue.
 </p>
 </dd>
@@ -948,21 +910,21 @@ the correct partition offset (see &ndash;inputoffset for more info).
 
 <p>ddru_ntfsfindbad supports the following options:
 </p>
-<dl compact="compact">
-<dt>&lsquo;<samp>-h</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--help</samp>&rsquo;</dt>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">-h</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--help</samp>&rsquo;</dt>
 <dd><p>Print an informative help message describing the options and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-v</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--version</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-v</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--version</samp>&rsquo;</dt>
 <dd><p>Print the version number and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-D</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--debug</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-D</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--debug</samp>&rsquo;</dt>
 <dd><p>Turn on debugging and create a debug file. The name of this file is
-<code>ntfsfindbad_debug.log</code>. It is multi-level, meaning -D is level 1, -DD is
+<code class="code">ntfsfindbad_debug.log</code>. It is multi-level, meaning -D is level 1, -DD is
 level 2 and so on. Please note that anything higher than level 2 can produce a
 stupidly large debug file that you probably won&rsquo;t know what to do with. This
 file would normally be for my use in troubleshooting bugs. However, I have made
@@ -985,8 +947,8 @@ the fragment location to the rescue logfile, so that you could customize a
 ddrescue command to make further attempts at recovering specific data.
 </p>
 </dd>
-<dt>&lsquo;<samp>-V</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--verbose</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-V</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
 <dd><p>Show additional information. It is multi-level, meaning -V is level 1, -VV is
 level 2 and so on. At this time I am only going to provide some info for level
 1, as higher levels are more for my personal use, and anything above level 2
@@ -1002,8 +964,8 @@ happened while processing. This could be something wrong with the entry, or my
 lack of knowledge on how to process it (ask Bill Gates).
 </p>
 </dd>
-<dt>&lsquo;<samp>-e <var>type</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--encoding <var>type</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-e <var class="var">type</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--encoding <var class="var">type</var></samp>&rsquo;</dt>
 <dd><p>Set the character encoding type for the file name output. The default is UTF-8
 which should be good for most if not all circumstances. This allows the user to
 change the character encoding for the file names, as they are in the format of
@@ -1022,20 +984,20 @@ character (likely the &quot;?&quot; character). It will show on the screen how m
 characters were converted for every inode. For example, to convert to ASCII with
 attempted translation, you would use the option:
 </p><div class="example">
-<pre class="example">--encoding ASCII//TRANSLIT
+<pre class="example-preformatted">--encoding ASCII//TRANSLIT
 </pre></div>
 
 </dd>
-<dt>&lsquo;<samp>-n</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--noconvert</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-n</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--noconvert</samp>&rsquo;</dt>
 <dd><p>Turns off the iconv file name conversion and uses the old method of using every
 other character. This option has been added in case of odd program crashes due
 to iconv being buggy with a memory leak. This old method will only work proper
 with normal printable ASCII characters.
 </p>
 </dd>
-<dt>&lsquo;<samp>-i <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--inputoffset <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-i <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--inputoffset <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>Set input offset (partition offset). This is needed if you did a whole drive
 recovery, to specify the offset of the NTFS partition. You need to specify this
 offset if you used an input such as &quot;/dev/sda&quot;. You can get this offset by doing
@@ -1046,7 +1008,7 @@ the name of the image file. Let&rsquo;s look at the following results from &quot
 /dev/sdb&quot;, where /dev/sdb is the destination disk or image you recovered.
 </p>
 <div class="example">
-<pre class="example">root# fdisk -lu /dev/sdb
+<pre class="example-preformatted">root# fdisk -lu /dev/sdb
 
 Disk /dev/sdb: 5 GB, 5362882560 bytes
 255 heads, 63 sectors/track, 652 cylinders, total 10474380 sectors
@@ -1064,12 +1026,12 @@ which is what you supply to this option. So your ddru_ntfsfindbad command would
 look something like this:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsfindbad /dev/sdb logfile -i 1048576
+<pre class="example-preformatted">ddru_ntfsfindbad /dev/sdb logfile -i 1048576
 </pre></div>
 
 <p>Let&rsquo;s look at an example from an image file:
 </p><div class="example">
-<pre class="example">root# fdisk -lu alice.dd
+<pre class="example-preformatted">root# fdisk -lu alice.dd
 
 Disk /media/data/alice.dd: 160 GB, 160039272960 bytes
 255 heads, 63 sectors/track, 19457 cylinders, total 312576705 sectors
@@ -1089,11 +1051,25 @@ in bytes, which is what you supply to this option. So your ddru_ntfsfindbad
 command would look something like this:
 </p>
 <div class="example">
-<pre class="example">ddru_ntfsfindbad alice.dd logfile -i 10486808576
+<pre class="example-preformatted">ddru_ntfsfindbad alice.dd logfile -i 10486808576
 </pre></div>
 
 <p>If you do not supply the correct offset, you will get an error stating the boot
 sector ID is not NTFS, and the program will exit.
+</p>
+</dd>
+<dt>&lsquo;<samp class="samp">-u</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--untried</samp>&rsquo;</dt>
+<dd><p>Treat non-tried (uncopied) regions as bad. By default ddru_ntfsfindbad assumes
+it is working with a fully recovered image, so the only regions it considers bad
+are the ones ddrescue marked as failed (the &quot;-&quot;, &quot;/&quot;, and &quot;*&quot; status types in
+the logfile). Non-tried (&quot;?&quot;) regions are normally ignored. If the rescue was
+interrupted before completion (for example the drive failed partway through the
+copy), some files may sit in regions that were never tried, and those would not
+be flagged. Use this option in that case so that non-tried regions are also
+counted as errors, ensuring those files are reported as bad. Note that this only
+affects matching of file data; it does not change how non-tried regions within
+the MFT itself are handled.
 </p>
 </dd>
 </dl>
@@ -1103,52 +1079,50 @@ sector ID is not NTFS, and the program will exit.
 <p>PARTITION ONLY TO IMAGE RESCUE -
 If your ddrescue command was:
 </p><div class="example">
-<pre class="example">ddrescue /dev/sda1 rescued_image rescued_logfile
+<pre class="example-preformatted">ddrescue /dev/sda1 rescued_image rescued_logfile
 </pre></div>
 
 <p>Then the ddru_ntfsfindbad command would be:
 </p><div class="example">
-<pre class="example">ddru_ntfsfindbad rescued_image rescued_logfile
+<pre class="example-preformatted">ddru_ntfsfindbad rescued_image rescued_logfile
 </pre></div>
 
 <p>WHOLE DISK TO DISK RESCUE -
 If your ddrescue command was:
 </p><div class="example">
-<pre class="example">ddrescue /dev/sda /dev/sdb rescued_logfile
+<pre class="example-preformatted">ddrescue /dev/sda /dev/sdb rescued_logfile
 </pre></div>
 
 <p>Then you would have to use the &ndash;inputoffset option (see the option details
 above for how to get the offset), so the ddru_ntfsfindbad command would be
 something like:
 </p><div class="example">
-<pre class="example">ddru_ntfsfindbad /dev/sdb rescued_logfile --inputoffset 1048576
+<pre class="example-preformatted">ddru_ntfsfindbad /dev/sdb rescued_logfile --inputoffset 1048576
 </pre></div>
 
 <p>WHOLE DISK TO IMAGE RESCUE -
 If your ddrescue command was:
 </p><div class="example">
-<pre class="example">ddrescue /dev/sda rescued_image rescued_logfile
+<pre class="example-preformatted">ddrescue /dev/sda rescued_image rescued_logfile
 </pre></div>
 
 <p>Then you would have to use the &ndash;inputoffset option (see the option details
 above for how to get the offset), so the ddru_ntfsfindbad command would be
 something like:
 </p><div class="example">
-<pre class="example">ddru_ntfsfindbad rescued_image rescued_logfile --inputoffset 1048576
+<pre class="example-preformatted">ddru_ntfsfindbad rescued_image rescued_logfile --inputoffset 1048576
 </pre></div>
 
 
 
 <hr>
-<a name="ddru_005fdiskutility"></a>
-<div class="header">
-<p>
-Next: <a href="#Important-Notes" accesskey="n" rel="next">Important Notes</a>, Previous: <a href="#ddru_005fntfsfindbad" accesskey="p" rel="prev">ddru_ntfsfindbad</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="ddru_005fdiskutility-1"></a>
-<h2 class="chapter">5 ddru_diskutility</h2>
-<a name="index-ddru_005fdiskutility"></a>
-<a name="index-ddru_005fdiskutility-1"></a>
+<div class="chapter-level-extent" id="ddru_005fdiskutility">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Important-Notes" rel="next">Important Notes</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#ddru_005fntfsfindbad" rel="prev">ddru_ntfsfindbad</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="ddru_005fdiskutility-1"><span>5 ddru_diskutility<a class="copiable-link" href="#ddru_005fdiskutility-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-ddru_005fdiskutility"></a>
+<a class="index-entry-id" id="index-ddru_005fdiskutility-1"></a>
 
 <p>Ddru_diskutility is an advanced LINUX ONLY utility that can perform several
 different functions on a disk, using some direct pass-through disk commands. It
@@ -1164,12 +1138,12 @@ this documentation. If you don&rsquo;t understand what it does, then don&rsquo;t
 <p>The format for running ddru_diskutility is:
 </p>
 <div class="example">
-<pre class="example">ddru_diskutility <var>source_disk</var>  [<var>options</var>]
+<pre class="example-preformatted">ddru_diskutility <var class="var">source_disk</var>  [<var class="var">options</var>]
 </pre></div>
 
 <p>Where:
-</p><dl compact="compact">
-<dt><var>source_disk</var></dt>
+</p><dl class="table">
+<dt><var class="var">source_disk</var></dt>
 <dd><p>The drive that you wish to work with. This NEEDS to be a reference to the WHOLE
 DISK, and NOT a partition. All of the direct passthrough commands will react as
 if the whole disk was selected, so it is very important to use reference the
@@ -1180,61 +1154,61 @@ whole disk so you get accurate results!
 
 <p>ddru_diskutility supports the following options:
 </p>
-<dl compact="compact">
-<dt>&lsquo;<samp>-h</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--help</samp>&rsquo;</dt>
+<dl class="table">
+<dt>&lsquo;<samp class="samp">-h</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--help</samp>&rsquo;</dt>
 <dd><p>Print an informative help message describing the options and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-v</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--version</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-v</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--version</samp>&rsquo;</dt>
 <dd><p>Print the version number and exit.
 </p>
 </dd>
-<dt>&lsquo;<samp>-V</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--verbose</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-V</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--verbose</samp>&rsquo;</dt>
 <dd><p>Show additional information. There are currently 3 levels of verbose. The levels
 of verbose can be achieved by multiple instances of the option (&quot;-VVV&quot; for level
 3).
 </p>
 </dd>
-<dt>&lsquo;<samp>-b <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--sectorsize <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-b <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--sectorsize <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>Sector size in bytes (default = 512).
 </p>
 </dd>
-<dt>&lsquo;<samp>-B</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--binary</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-B</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--binary</samp>&rsquo;</dt>
 <dd><p>Show some results output in binary. This was mostly created for alternative
 viewing for the readlong commands, but can also be useful for viewing the
 advanced (using verbose level 3) ata inquiry results.
 </p>
 </dd>
-<dt>&lsquo;<samp>-c</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--clustersize</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-c</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--clustersize</samp>&rsquo;</dt>
 <dd><p>This is the number of sectors to be processed, also known as a &quot;block&quot; (default
 = 1, maximum = 256). Cannot be used with &ndash;readsize.
 </p>
 </dd>
-<dt>&lsquo;<samp>-d</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--direct</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-d</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--direct</samp>&rsquo;</dt>
 <dd><p>Use direct I/O (O_DIRECT). Only applies to the readsector command. It does not
 have any noticable effect if used with passthrough commands.
 </p>
 </dd>
-<dt>&lsquo;<samp>-p</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--sgpt</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-p</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--sgpt</samp>&rsquo;</dt>
 <dd><p>Use SCSI passthrough commands. Only applies to the readsector command.
 </p>
 </dd>
-<dt>&lsquo;<samp>-P</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--sgptata</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-P</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--sgptata</samp>&rsquo;</dt>
 <dd><p>Use ATA passthrough commands. Only applies to the readsector command. This
 command will override the &ndash;sgpt option.
 </p>
 </dd>
-<dt>&lsquo;<samp>-i <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--inputoffset <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-i <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--inputoffset <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>Set the input offset in bytes for the command. This is in addition to any sector
 number provided in a command. Meaning that &quot;&ndash; inputoffset 1024 &ndash;readsector 5&quot;
 and and &quot;&ndash;inputoffset 2560 &ndash;readsector 2&quot; will both actually read sector 7.
@@ -1243,8 +1217,8 @@ manage (use inputoffset for the partition offset, and then the sector number
 will be referenced to that partition).
 </p>
 </dd>
-<dt>&lsquo;<samp>-I</samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--inquiry</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-I</samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--inquiry</samp>&rsquo;</dt>
 <dd><p>Show the device information. This will show the basic SCSI inquiry results, and
 if the drive is reported to be ATA then it will also show the ATA inquiry
 results. To get the entire results, run with a verbose level of 3. Please note
@@ -1253,20 +1227,20 @@ are based on words, instead of hex based on bytes. This is to help with matching
 up with the table provided in any standard ATA documentation.
 </p>
 </dd>
-<dt>&lsquo;<samp>-s <var>bytes</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--readsize <var>bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-s <var class="var">bytes</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--readsize <var class="var">bytes</var></samp>&rsquo;</dt>
 <dd><p>Alternative method of selecting the number of sectors to be processed. You
 cannot use this option and the &ndash;clustersize option at the same time.
 </p>
 </dd>
-<dt>&lsquo;<samp>-r <var>sector</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--readsector <var>sector</var></samp>&rsquo;</dt>
-<dd><p>Reads a block of sectors starting at <var>sector</var>. Also influenced by
+<dt>&lsquo;<samp class="samp">-r <var class="var">sector</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--readsector <var class="var">sector</var></samp>&rsquo;</dt>
+<dd><p>Reads a block of sectors starting at <var class="var">sector</var>. Also influenced by
 &ndash;inputoffset.
 </p>
 </dd>
-<dt>&lsquo;<samp>-l <var>sector</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>-readlong28 <var>sector</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-l <var class="var">sector</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-readlong28 <var class="var">sector</var></samp>&rsquo;</dt>
 <dd><p>Performs an ATA 28 bit readlong command on the specified sector. Also influenced
 by &ndash;inputoffset. Note that this command has been made obsolete many years ago,
 but some drives still supported it. There are two parts of the output: 512 bytes
@@ -1274,8 +1248,8 @@ of data and then 52 bytes of ecc. The first 8 bytes (4 words) usually contains
 the 4 actual ecc bytes. Your results may vary.
 </p>
 </dd>
-<dt>&lsquo;<samp>-L <var>sector</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>-readlong48 <var>sector</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-L <var class="var">sector</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-readlong48 <var class="var">sector</var></samp>&rsquo;</dt>
 <dd><p>Performs an ATA SCT Read Long command on the specified sector. Also influenced
 by &ndash;inputoffset. Note that this command was made obsolete years ago, but some
 drives still support it. Also note that in the ATA specification it states that
@@ -1286,10 +1260,10 @@ totally useless to you. There are two parts of the output: 512 bytes of data and
 then likely 52 bytes of ecc. Your results may vary.
 </p>
 </dd>
-<dt>&lsquo;<samp>-g <var>count</var></samp>&rsquo;</dt>
-<dt>&lsquo;<samp>--readlongbest <var>count</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">-g <var class="var">count</var></samp>&rsquo;</dt>
+<dt>&lsquo;<samp class="samp">--readlongbest <var class="var">count</var></samp>&rsquo;</dt>
 <dd><p>Used with either the &ndash;readlong28 or &ndash;readlong48 command. Performs the readlong
-command <var>count</var> number of times and displays the best average of the data.
+command <var class="var">count</var> number of times and displays the best average of the data.
 The average is based on individual bits. The maximum count is 256. The theory of
 this is supposed to be that if the sector is read several times, the average
 data could be closer to the desired recovered data then any single read. This is
@@ -1304,14 +1278,12 @@ per read.
 
 
 <hr>
-<a name="Important-Notes"></a>
-<div class="header">
-<p>
-Next: <a href="#Reporting-Bugs" accesskey="n" rel="next">Reporting Bugs</a>, Previous: <a href="#ddru_005fdiskutility" accesskey="p" rel="prev">ddru_diskutility</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="Important-Notes-1"></a>
-<h2 class="chapter">6 Important Notes</h2>
-<a name="index-important-notes"></a>
+<div class="chapter-level-extent" id="Important-Notes">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Reporting-Bugs" rel="next">Reporting Bugs</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#ddru_005fdiskutility" rel="prev">ddru_diskutility</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="Important-Notes-1"><span>6 Important Notes<a class="copiable-link" href="#Important-Notes-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-important-notes"></a>
 
 <p>Here are a few things to consider about data rescue and using this software.
 </p>
@@ -1330,7 +1302,7 @@ these cases I would recommend using the fill mode of ddrescue to fill any
 unfinished/untried areas with zeros.  Example command:
 </p>
 <div class="example">
-<pre class="example">ddrescue --fill-mode=?/*- /dev/zero recovered_image logfile
+<pre class="example-preformatted">ddrescue --fill-mode=?/*- /dev/zero recovered_image logfile
 </pre></div>
 
 <p>This would write zeros to any portion of the recovery that was not successfully
@@ -1339,70 +1311,68 @@ read from the source.
 
 
 <hr>
-<a name="Reporting-Bugs"></a>
-<div class="header">
-<p>
-Next: <a href="#Index" accesskey="n" rel="next">Index</a>, Previous: <a href="#Important-Notes" accesskey="p" rel="prev">Important Notes</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="Reporting-Bugs-1"></a>
-<h2 class="chapter">7 Reporting Bugs</h2>
-<a name="index-bugs"></a>
+<div class="chapter-level-extent" id="Reporting-Bugs">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Next: </span><span class="nav-link"><a href="#Index" rel="next">Index</a></span></span>, <span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Important-Notes" rel="prev">Important Notes</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="chapter" id="Reporting-Bugs-1"><span>7 Reporting Bugs<a class="copiable-link" href="#Reporting-Bugs-1"> &para;</a></span></h2>
+<a class="index-entry-id" id="index-bugs"></a>
 
 <p>There are likely bugs in the programs of ddrutility. There are almost definitely
 errors and omissions in this documentation, and perhaps also in the individual
 programs&rsquo; help and manual files. If you report them, they will get fixed. If you
 don&rsquo;t report them, they will just stay the way they are and will not get fixed.
 </p>
-<p>Report bugs to (<a href="mailto:maximus57@hotmail.com">maximus57@hotmail.com</a>)
+<p>Report bugs to (<a class="email" href="mailto:maximus57@hotmail.com">maximus57@hotmail.com</a>)
 Or better yet, report bugs at the Ddrutility homepage:
-<a href="http://sourceforge.net/projects/ddrutility/">http://sourceforge.net/projects/ddrutility/</a>
+<a class="uref" href="http://sourceforge.net/projects/ddrutility/">http://sourceforge.net/projects/ddrutility/</a>
 </p>
 <p>Please include the version number of ddrutility, and the version of the
 individual program. You can find the version by running ddrutility or the
-program with the <code>--version</code> option.
+program with the <code class="code">--version</code> option.
 </p>
 <hr>
-<a name="Index"></a>
-<div class="header">
-<p>
-Previous: <a href="#Reporting-Bugs" accesskey="p" rel="prev">Reporting Bugs</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#Index" title="Index" rel="index">Index</a>]</p>
 </div>
-<a name="Index-1"></a>
-<h2 class="unnumbered">Index</h2>
+<div class="unnumbered-level-extent" id="Index">
+<p class="nav-panel">
+<span class="nav-button"><span class="nav-label">Previous: </span><span class="nav-link"><a href="#Reporting-Bugs" rel="prev">Reporting Bugs</a></span></span>, <span class="nav-button"><span class="nav-label">Up: </span><span class="nav-link"><a href="#Top" rel="up">ddrutility</a></span></span><span class="nav-button"> &nbsp; </span><span class="nav-button">[<a href="#Index" title="Index" rel="index">Index</a>]</span></p>
+<h2 class="unnumbered" id="Index-1"><span>Index<a class="copiable-link" href="#Index-1"> &para;</a></span></h2>
 
-<table><tr><th valign="top">Jump to: &nbsp; </th><td><a class="summary-letter" href="#Index_cp_letter-B"><b>B</b></a>
+<div class="printindex cp-printindex">
+<table class="index-letters-header-printindex cp-letters-header-printindex"><tr><th>Jump to: &nbsp; </th><td><a class="summary-letter-printindex" href="#Index_cp_letter-B"><b>B</b></a>
  &nbsp; 
-<a class="summary-letter" href="#Index_cp_letter-D"><b>D</b></a>
+<a class="summary-letter-printindex" href="#Index_cp_letter-D"><b>D</b></a>
  &nbsp; 
-<a class="summary-letter" href="#Index_cp_letter-I"><b>I</b></a>
+<a class="summary-letter-printindex" href="#Index_cp_letter-I"><b>I</b></a>
  &nbsp; 
 </td></tr></table>
-<table class="index-cp" border="0">
-<tr><td></td><th align="left">Index Entry</th><td>&nbsp;</td><th align="left"> Section</th></tr>
-<tr><td colspan="4"> <hr></td></tr>
-<tr><th><a name="Index_cp_letter-B">B</a></th><td></td><td></td></tr>
-<tr><td></td><td valign="top"><a href="#index-bugs">bugs</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Reporting-Bugs">Reporting Bugs</a></td></tr>
-<tr><td colspan="4"> <hr></td></tr>
-<tr><th><a name="Index_cp_letter-D">D</a></th><td></td><td></td></tr>
-<tr><td></td><td valign="top"><a href="#index-ddru_005fdiskutility">ddru_diskutility</a>:</td><td>&nbsp;</td><td valign="top"><a href="#ddru_005fdiskutility">ddru_diskutility</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-ddru_005ffindbad">ddru_findbad</a>:</td><td>&nbsp;</td><td valign="top"><a href="#ddru_005ffindbad">ddru_findbad</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-ddru_005fntfsbitmap">ddru_ntfsbitmap</a>:</td><td>&nbsp;</td><td valign="top"><a href="#ddru_005fntfsbitmap">ddru_ntfsbitmap</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-ddru_005fntfsfindbad">ddru_ntfsfindbad</a>:</td><td>&nbsp;</td><td valign="top"><a href="#ddru_005fntfsfindbad">ddru_ntfsfindbad</a></td></tr>
-<tr><td colspan="4"> <hr></td></tr>
-<tr><th><a name="Index_cp_letter-I">I</a></th><td></td><td></td></tr>
-<tr><td></td><td valign="top"><a href="#index-important-notes">important notes</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Important-Notes">Important Notes</a></td></tr>
-<tr><td></td><td valign="top"><a href="#index-introduction">introduction</a>:</td><td>&nbsp;</td><td valign="top"><a href="#Introduction">Introduction</a></td></tr>
-<tr><td colspan="4"> <hr></td></tr>
+<table class="index-entries-printindex cp-entries-printindex">
+<tr><td colspan="2"><hr></td></tr>
+<tr><th class="index-letter-header-printindex cp-letter-header-printindex" colspan="2" id="Index_cp_letter-B">B</th></tr>
+<tr><td class="printindex-index-entry"><a href="#index-bugs">bugs</a></td><td class="printindex-index-section"><a href="#Reporting-Bugs">Reporting Bugs</a></td></tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr><th class="index-letter-header-printindex cp-letter-header-printindex" colspan="2" id="Index_cp_letter-D">D</th></tr>
+<tr><td class="printindex-index-entry"><a href="#index-ddru_005fdiskutility">ddru_diskutility</a></td><td class="printindex-index-section"><a href="#ddru_005fdiskutility">ddru_diskutility</a></td></tr>
+<tr><td class="printindex-index-entry"><a href="#index-ddru_005ffindbad">ddru_findbad</a></td><td class="printindex-index-section"><a href="#ddru_005ffindbad">ddru_findbad</a></td></tr>
+<tr><td class="printindex-index-entry"><a href="#index-ddru_005fntfsbitmap">ddru_ntfsbitmap</a></td><td class="printindex-index-section"><a href="#ddru_005fntfsbitmap">ddru_ntfsbitmap</a></td></tr>
+<tr><td class="printindex-index-entry"><a href="#index-ddru_005fntfsfindbad">ddru_ntfsfindbad</a></td><td class="printindex-index-section"><a href="#ddru_005fntfsfindbad">ddru_ntfsfindbad</a></td></tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr><th class="index-letter-header-printindex cp-letter-header-printindex" colspan="2" id="Index_cp_letter-I">I</th></tr>
+<tr><td class="printindex-index-entry"><a href="#index-important-notes">important notes</a></td><td class="printindex-index-section"><a href="#Important-Notes">Important Notes</a></td></tr>
+<tr><td class="printindex-index-entry"><a href="#index-introduction">introduction</a></td><td class="printindex-index-section"><a href="#Introduction">Introduction</a></td></tr>
+<tr><td colspan="2"><hr></td></tr>
 </table>
-<table><tr><th valign="top">Jump to: &nbsp; </th><td><a class="summary-letter" href="#Index_cp_letter-B"><b>B</b></a>
+<table class="index-letters-footer-printindex cp-letters-footer-printindex"><tr><th>Jump to: &nbsp; </th><td><a class="summary-letter-printindex" href="#Index_cp_letter-B"><b>B</b></a>
  &nbsp; 
-<a class="summary-letter" href="#Index_cp_letter-D"><b>D</b></a>
+<a class="summary-letter-printindex" href="#Index_cp_letter-D"><b>D</b></a>
  &nbsp; 
-<a class="summary-letter" href="#Index_cp_letter-I"><b>I</b></a>
+<a class="summary-letter-printindex" href="#Index_cp_letter-I"><b>I</b></a>
  &nbsp; 
 </td></tr></table>
+</div>
 
-<hr>
+</div>
+</div>
 
 
 
