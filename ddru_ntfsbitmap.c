@@ -26,7 +26,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 char *title = "ddru_ntfsbitmap";
 char *version_number = "1.6 20260625";
-int copyright_year = 2026;
+int copyright_year = 2015;
+int update_year = 2026;
 
 // Function to handle ctrl-c
 void signal_callback_handler(int signum)
@@ -1510,6 +1511,7 @@ void version(void)
 {
   printf ("%s %s\n", title, version_number);
   printf ("Copyright (C) %d Scott Dwyer.\n", copyright_year);
+  printf ("Copyright (C) %d Andrew E Scott.\n", update_year);
   printf ("License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n");
   printf ("This is free software: you are free to change and redistribute it.\n");
   printf ("There is NO WARRANTY, to the extent permitted by law.\n");
